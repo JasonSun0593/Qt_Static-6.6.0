@@ -9,7 +9,10 @@ jobs:
       contents: write
     runs-on: ubuntu-24.04
     steps:
+      - name: checkout repo 
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      
+      - name: copy files
       - run: ./scripts/build.sh
       
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
@@ -26,6 +29,8 @@ jobs:
         with:
           name: static_qt_660-package
           path: dist/
+          
+      - name: compress files
       - run: cd dist; zip -r ../static_qt_660-package.zip .
       - run:
           gh release upload ${{ github.event.release.tag_name }}
