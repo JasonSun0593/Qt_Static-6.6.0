@@ -3,7 +3,7 @@ set -e # Error handling mechanism inside this script
 
 ROOT=$(dirname "$(dirname "${BASH_SOURCE[@]}")")
 DIST="$ROOT/dist/package"
-DIST_PKG="$DIST/static_qt_660"
+DIST_PKG="$DIST/stat_qt_660"
 
 echo "Cleanup previous build"
 rm -rf "$DIST_PKG"
