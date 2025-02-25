@@ -10,4 +10,4 @@ rm -rf "$DIST_PKG"
 mkdir -p "$DIST"
 
 echo "Copy package sources"
-cp -r "ROOT" "$DIST_PKG"
+cp -r "$ROOT" "$DIST_PKG"
