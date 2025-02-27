@@ -21,6 +21,7 @@ jobs:
         with:
           name: static_qt_660-package
           path: dist/
+      - run: rm -rf dist/package
       - run: cd dist; zip -r ../static_qt_660-package.zip .
       - run:
           gh release upload ${{ github.event.release.tag_name }}
