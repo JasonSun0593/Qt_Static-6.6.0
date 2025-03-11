@@ -50,7 +50,7 @@
 
 #define QT_FEATURE_opensslv11 -1
 
-#define QT_FEATURE_opensslv30 -1
+#define QT_FEATURE_opensslv30 1
 
 
 #define QT_VERSION_STR "6.6.0"
@@ -87,4 +87,3 @@
 #define QT_COMPILER_SUPPORTS_RDRND 1
 #define QT_COMPILER_SUPPORTS_RDSEED 1
 #define QT_COMPILER_SUPPORTS_SHA 1
-#define QT_NO_OPENSSL

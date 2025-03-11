@@ -5,6 +5,15 @@
 # Commands may need to know the format version.
 set(CMAKE_IMPORT_FILE_VERSION 1)
 
+# Import target "Qt6::syncqt" for configuration "Release"
+set_property(TARGET Qt6::syncqt APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(Qt6::syncqt PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/bin/syncqt.exe"
+  )
+
+list(APPEND _cmake_import_check_targets Qt6::syncqt )
+list(APPEND _cmake_import_check_files_for_Qt6::syncqt "${_IMPORT_PREFIX}/bin/syncqt.exe" )
+
 # Import target "Qt6::moc" for configuration "Release"
 set_property(TARGET Qt6::moc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(Qt6::moc PROPERTIES

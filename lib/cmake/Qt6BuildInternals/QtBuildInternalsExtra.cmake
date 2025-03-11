@@ -42,7 +42,7 @@ endfunction()
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT AND
         NOT QT_BUILD_INTERNALS_NO_FORCE_SET_INSTALL_PREFIX
         AND NOT QT_SUPERBUILD)
-    set(qtbi_orig_prefix "C:/Qt/Qt-6.6.0")
+    set(qtbi_orig_prefix "D:/Qt/Qt6.6")
     set(qtbi_orig_staging_prefix "")
     qt_internal_new_prefix(qtbi_new_prefix
         "${QT_BUILD_INTERNALS_RELOCATABLE_INSTALL_PREFIX}"
@@ -74,12 +74,12 @@ endif()
 set(QT_WILL_INSTALL ON CACHE BOOL
     "Boolean indicating if doing a Qt prefix build (vs non-prefix build)." FORCE)
 
-set(QT_SOURCE_TREE "D:/Other_proj/qt660-m/qtbase" CACHE PATH
+set(QT_SOURCE_TREE "D:/qif/qt5/qtbase" CACHE PATH
 "A path to the source tree of the previously configured QtBase project." FORCE)
 
 # Propagate decision of building tests and examples to other repositories.
-set(QT_BUILD_TESTS OFF CACHE BOOL "Build the testing tree.")
-set(QT_BUILD_EXAMPLES OFF CACHE BOOL "Build Qt examples")
+set(QT_BUILD_TESTS FALSE CACHE BOOL "Build the testing tree.")
+set(QT_BUILD_EXAMPLES FALSE CACHE BOOL "Build Qt examples")
 set(QT_BUILD_BENCHMARKS OFF CACHE BOOL "Build Qt Benchmarks")
 set(QT_BUILD_MANUAL_TESTS OFF CACHE BOOL "Build Qt manual tests")
 set(QT_BUILD_MINIMAL_STATIC_TESTS OFF CACHE BOOL

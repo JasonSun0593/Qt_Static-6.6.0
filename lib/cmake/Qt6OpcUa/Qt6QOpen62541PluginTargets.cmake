@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.26)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -60,7 +60,7 @@ add_library(Qt6::QOpen62541Plugin STATIC IMPORTED)
 
 set_target_properties(Qt6::QOpen62541Plugin PROPERTIES
   COMPATIBLE_INTERFACE_STRING "QT_MAJOR_VERSION"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::CorePrivate>;\$<LINK_ONLY:Qt6::Network>;\$<LINK_ONLY:Qt6::OpcUa>;\$<LINK_ONLY:Qt6::OpcUaPrivate>;\$<LINK_ONLY:Qt6::PlatformPluginInternal>;\$<LINK_ONLY:ws2_32.lib>"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:Qt6::Core>;\$<LINK_ONLY:Qt6::CorePrivate>;\$<LINK_ONLY:Qt6::Network>;\$<LINK_ONLY:Qt6::OpcUa>;\$<LINK_ONLY:Qt6::OpcUaPrivate>;\$<LINK_ONLY:Qt6::PlatformPluginInternal>;\$<LINK_ONLY:WrapOpenSSL::WrapOpenSSL>;\$<LINK_ONLY:ws2_32.lib>"
   INTERFACE_QT_MAJOR_VERSION "6"
   QT_DEFAULT_PLUGIN "1"
   QT_MODULE "OpcUa"

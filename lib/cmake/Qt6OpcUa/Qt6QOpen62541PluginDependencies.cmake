@@ -1,7 +1,7 @@
 set(QOpen62541Plugin_FOUND FALSE)
 
 # note: _third_party_deps example: "ICU\\;FALSE\\;1.0\\;i18n uc data;ZLIB\\;FALSE\\;\\;"
-set(__qt_QOpen62541Plugin_third_party_deps "")
+set(__qt_QOpen62541Plugin_third_party_deps "WrapOpenSSL\;FALSE\;1.1\;\;")
 _qt_internal_find_third_party_dependencies("QOpen62541Plugin" __qt_QOpen62541Plugin_third_party_deps)
 
 set(__qt_use_no_default_path_for_qt_packages "NO_DEFAULT_PATH")

@@ -3,7 +3,7 @@
 set script_dir_path=%~dp0
 
 :: Try to use original cmake, otherwise to make it relocatable, use any cmake found in PATH.
-set cmake_path=C:/Qt/Tools/CMake_64/bin/cmake.exe
+set cmake_path=C:/Program Files/CMake/bin/cmake.exe
 if not exist "%cmake_path%" set cmake_path=cmake
 
 if NOT "%~2" == "" goto :showhelp

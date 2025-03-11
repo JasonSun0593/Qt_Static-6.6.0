@@ -112,7 +112,7 @@
 
 #define QT_FEATURE_libudev -1
 
-#define QT_FEATURE_openssl -1
+#define QT_FEATURE_openssl 1
 
 #define QT_FEATURE_dlopen -1
 

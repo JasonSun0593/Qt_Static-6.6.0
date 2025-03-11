@@ -26,7 +26,7 @@ endif()
 
 
 # note: _third_party_deps example: "ICU\\;FALSE\\;1.0\\;i18n uc data;ZLIB\\;FALSE\\;\\;"
-set(__qt_OpcUa_third_party_deps "")
+set(__qt_OpcUa_third_party_deps "WrapOpenSSL\;FALSE\;1.1\;\;")
 _qt_internal_find_third_party_dependencies("OpcUa" __qt_OpcUa_third_party_deps)
 
 # Find Qt tool package.

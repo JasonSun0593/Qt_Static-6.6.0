@@ -536,6 +536,22 @@
                         ],
                         "name": "setSocketOption",
                         "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "authenticator",
+                                "type": "QSslPreSharedKeyAuthenticator*"
+                            }
+                        ],
+                        "name": "pskRequired",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "handshakeTimeout",
+                        "returnType": "void"
                     }
                 ],
                 "superClasses": [

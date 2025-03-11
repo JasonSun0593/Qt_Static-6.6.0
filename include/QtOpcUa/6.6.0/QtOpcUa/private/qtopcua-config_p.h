@@ -8,7 +8,7 @@
 
 #define QT_FEATURE_ns0idgenerator -1
 
-#define QT_FEATURE_gds -1
+#define QT_FEATURE_gds 1
 
-#define QT_FEATURE_open62541_security -1
+#define QT_FEATURE_open62541_security 1
 

@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.26)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -67,9 +67,9 @@ set_target_properties(Qt6::Network PROPERTIES
   INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6network_release_metatypes.json>"
   MODULE_PLUGIN_TYPES "networkaccess;networkinformation;tls"
   QT_DISABLED_PRIVATE_FEATURES "ifr_index;libresolv;libproxy;linux_netlink;res_setservers;publicsuffix_system"
-  QT_DISABLED_PUBLIC_FEATURES "getifaddrs;ipv6ifname;securetransport;dtls;ocsp;sctp;brotli;gssapi"
+  QT_DISABLED_PUBLIC_FEATURES "getifaddrs;ipv6ifname;securetransport;sctp;brotli;gssapi"
   QT_ENABLED_PRIVATE_FEATURES "system_proxies;networklistmanager;publicsuffix_qt"
-  QT_ENABLED_PUBLIC_FEATURES "schannel;ssl;http;udpsocket;networkproxy;socks5;networkinterface;networkdiskcache;localserver;dnslookup;sspi;topleveldomain"
+  QT_ENABLED_PUBLIC_FEATURES "schannel;ssl;dtls;ocsp;http;udpsocket;networkproxy;socks5;networkinterface;networkdiskcache;localserver;dnslookup;sspi;topleveldomain"
   QT_QMAKE_PRIVATE_CONFIG ""
   QT_QMAKE_PUBLIC_CONFIG ""
   QT_QMAKE_PUBLIC_QT_CONFIG ""

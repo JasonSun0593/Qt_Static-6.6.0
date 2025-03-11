@@ -9,3 +9,5 @@ QT.network_private.uses =
 QT.network_private.module_config = v2 staticlib internal_module
 QT.network_private.enabled_features = system-proxies networklistmanager publicsuffix-qt
 QT.network_private.disabled_features = ifr_index libresolv libproxy linux-netlink res_setservers publicsuffix-system
+QMAKE_INCDIR_OPENSSL = D:/Qt/Tools/OpenSSLv3/Win_x64/include
+QMAKE_LIBS_OPENSSL = -L"D:/Qt/Tools/OpenSSLv3/Win_x64/lib" -llibssl

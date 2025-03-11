@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.26)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -19,7 +19,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS Qt6::moc Qt6::rcc Qt6::tracepointgen Qt6::tracegen Qt6::cmake_automoc_parser Qt6::qlalr Qt6::qtpaths Qt6::androiddeployqt Qt6::androidtestrunner Qt6::windeployqt Qt6::qmake)
+foreach(_cmake_expected_target IN ITEMS Qt6::syncqt Qt6::moc Qt6::rcc Qt6::tracepointgen Qt6::tracegen Qt6::cmake_automoc_parser Qt6::qlalr Qt6::qtpaths Qt6::androiddeployqt Qt6::androidtestrunner Qt6::windeployqt Qt6::qmake)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -54,6 +54,16 @@ get_filename_component(_IMPORT_PREFIX "${_IMPORT_PREFIX}" PATH)
 if(_IMPORT_PREFIX STREQUAL "/")
   set(_IMPORT_PREFIX "")
 endif()
+
+# Create imported target Qt6::syncqt
+add_executable(Qt6::syncqt IMPORTED)
+
+set_target_properties(Qt6::syncqt PROPERTIES
+  COMPATIBLE_INTERFACE_STRING "QT_MAJOR_VERSION"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
+  INTERFACE_QT_MAJOR_VERSION "6"
+  _qt_package_version "6.6.0"
+)
 
 # Create imported target Qt6::moc
 add_executable(Qt6::moc IMPORTED)

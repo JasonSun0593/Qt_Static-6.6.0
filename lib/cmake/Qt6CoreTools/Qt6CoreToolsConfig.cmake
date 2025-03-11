@@ -53,6 +53,10 @@ endforeach()
 
 
 if(NOT QT_NO_CREATE_TARGETS AND Qt6CoreTools_FOUND)
+    __qt_internal_promote_target_to_global(Qt6::syncqt)
+endif()
+
+if(NOT QT_NO_CREATE_TARGETS AND Qt6CoreTools_FOUND)
     __qt_internal_promote_target_to_global(Qt6::moc)
 endif()
 
@@ -95,4 +99,4 @@ endif()
 if(NOT QT_NO_CREATE_TARGETS AND Qt6CoreTools_FOUND)
     __qt_internal_promote_target_to_global(Qt6::qmake)
 endif()
-set(Qt6CoreTools_TARGETS "Qt6::moc;Qt6::rcc;Qt6::tracepointgen;Qt6::tracegen;Qt6::cmake_automoc_parser;Qt6::qlalr;Qt6::qtpaths;Qt6::androiddeployqt;Qt6::androidtestrunner;Qt6::windeployqt;Qt6::qmake")
+set(Qt6CoreTools_TARGETS "Qt6::syncqt;Qt6::moc;Qt6::rcc;Qt6::tracepointgen;Qt6::tracegen;Qt6::cmake_automoc_parser;Qt6::qlalr;Qt6::qtpaths;Qt6::androiddeployqt;Qt6::androidtestrunner;Qt6::windeployqt;Qt6::qmake")

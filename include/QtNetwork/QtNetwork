@@ -8,6 +8,9 @@
 #if QT_CONFIG(dnslookup)
 #include "qdnslookup.h"
 #endif
+#if QT_CONFIG(dtls)
+#include "qdtls.h"
+#endif
 #include "qhostaddress.h"
 #include "qhostinfo.h"
 #include "qhstspolicy.h"

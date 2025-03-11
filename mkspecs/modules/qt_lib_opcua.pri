@@ -11,8 +11,8 @@ QT.opcua.depends =  core network
 QT.opcua.uses = 
 QT.opcua.module_config = v2 staticlib
 QT.opcua.DEFINES = QT_OPCUA_LIB
-QT.opcua.enabled_features = open62541
-QT.opcua.disabled_features = gds open62541-security
-QT_CONFIG += open62541
+QT.opcua.enabled_features = open62541 gds open62541-security
+QT.opcua.disabled_features = 
+QT_CONFIG += open62541 gds open62541-security
 QT_MODULES += opcua
 

@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.26)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -62,14 +62,14 @@ set_target_properties(Qt6::OpcUa PROPERTIES
   COMPATIBLE_INTERFACE_STRING "QT_MAJOR_VERSION"
   INTERFACE_COMPILE_DEFINITIONS "QT_OPCUA_LIB"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/QtOpcUa;${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Network;\$<LINK_ONLY:Qt6::CorePrivate>;\$<LINK_ONLY:Qt6::NetworkPrivate>;\$<LINK_ONLY:Qt6::PlatformModuleInternal>"
+  INTERFACE_LINK_LIBRARIES "Qt6::Core;Qt6::Network;\$<LINK_ONLY:Qt6::CorePrivate>;\$<LINK_ONLY:Qt6::NetworkPrivate>;\$<LINK_ONLY:Qt6::PlatformModuleInternal>;\$<LINK_ONLY:WrapOpenSSL::WrapOpenSSL>"
   INTERFACE_QT_MAJOR_VERSION "6"
   INTERFACE_SOURCES "\$<\$<BOOL:\$<TARGET_PROPERTY:QT_CONSUMES_METATYPES>>:${_IMPORT_PREFIX}/./metatypes/qt6opcua_release_metatypes.json>"
   MODULE_PLUGIN_TYPES "opcua"
-  QT_DISABLED_PRIVATE_FEATURES "system_open62541;uacpp;ns0idgenerator;gds;open62541_security"
-  QT_DISABLED_PUBLIC_FEATURES "gds;open62541_security"
-  QT_ENABLED_PRIVATE_FEATURES "open62541;ns0idnames"
-  QT_ENABLED_PUBLIC_FEATURES "open62541"
+  QT_DISABLED_PRIVATE_FEATURES "system_open62541;uacpp;ns0idgenerator"
+  QT_DISABLED_PUBLIC_FEATURES ""
+  QT_ENABLED_PRIVATE_FEATURES "open62541;ns0idnames;gds;open62541_security"
+  QT_ENABLED_PUBLIC_FEATURES "open62541;gds;open62541_security"
   QT_QMAKE_PRIVATE_CONFIG ""
   QT_QMAKE_PUBLIC_CONFIG ""
   QT_QMAKE_PUBLIC_QT_CONFIG ""

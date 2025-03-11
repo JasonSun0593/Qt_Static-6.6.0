@@ -8,9 +8,9 @@
 
 #define QT_FEATURE_ssl 1
 
-#define QT_FEATURE_dtls -1
+#define QT_FEATURE_dtls 1
 
-#define QT_FEATURE_ocsp -1
+#define QT_FEATURE_ocsp 1
 
 #define QT_FEATURE_sctp -1
 

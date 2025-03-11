@@ -1,5 +1,5 @@
 
-#line 126 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 126 "parser/qqmljs.g"
 // Copyright (C) 2016 The Qt Company Ltd.
 // Contact: https://www.qt.io/licensing/
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
@@ -273,27 +273,27 @@ protected:
 
 
 
-#line 1791 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 1791 "parser/qqmljs.g"
 
 #define J_SCRIPT_REGEXPLITERAL_RULE1 166
 
-#line 1803 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 1803 "parser/qqmljs.g"
 
 #define J_SCRIPT_REGEXPLITERAL_RULE2 167
 
-#line 3424 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 3424 "parser/qqmljs.g"
 
 #define J_SCRIPT_EXPRESSIONSTATEMENTLOOKAHEAD_RULE 468
 
-#line 4076 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 4076 "parser/qqmljs.g"
 
 #define J_SCRIPT_CONCISEBODYLOOKAHEAD_RULE 538
 
-#line 4614 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 4614 "parser/qqmljs.g"
 
 #define J_SCRIPT_EXPORTDECLARATIONLOOKAHEAD_RULE 606
 
-#line 4898 "../../../../../qtdeclarative/src/qml/parser/qqmljs.g"
+#line 4898 "parser/qqmljs.g"
 
 QT_END_NAMESPACE
 

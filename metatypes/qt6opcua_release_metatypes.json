@@ -16965,6 +16965,44 @@
     {
         "classes": [
             {
+                "className": "QOpcUaKeyPair",
+                "object": true,
+                "qualifiedClassName": "QOpcUaKeyPair",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "passphrase",
+                                "type": "QString&"
+                            },
+                            {
+                                "name": "maximumLength",
+                                "type": "int"
+                            },
+                            {
+                                "name": "writeOperation",
+                                "type": "bool"
+                            }
+                        ],
+                        "name": "passphraseNeeded",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qopcuakeypair.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
                 "className": "QOpcUaPlugin",
                 "object": true,
                 "qualifiedClassName": "QOpcUaPlugin",
@@ -17023,6 +17061,170 @@
             }
         ],
         "inputFile": "qopcuaprovider.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "QOpcUaGdsClient",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "Error",
+                        "values": [
+                            "NoError",
+                            "InvalidBackend",
+                            "InvalidEndpoint",
+                            "ConnectionError",
+                            "DirectoryNodeNotFound",
+                            "FailedToRegisterApplication",
+                            "FailedToUnregisterApplication",
+                            "FailedToGetCertificateStatus",
+                            "FailedToGetCertificate"
+                        ]
+                    },
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "name": "State",
+                        "values": [
+                            "Idle",
+                            "BackendInstantiated",
+                            "Connecting",
+                            "Connected",
+                            "RegisteringApplication",
+                            "ApplicationRegistered",
+                            "Error"
+                        ]
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "QOpcUaGdsClient",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "state",
+                                "type": "State"
+                            }
+                        ],
+                        "name": "stateChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "Error"
+                            }
+                        ],
+                        "name": "errorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "applicationRegistered",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "certificateGroups",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "name": "certificateGroupsReceived",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "certificateUpdateRequired",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "certificateUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "unregistered",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "trustListUpdated",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "authInfo",
+                                "type": "QOpcUaAuthenticationInformation&"
+                            }
+                        ],
+                        "name": "authenticationRequired",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            },
+                            {
+                                "type": "QVariant"
+                            },
+                            {
+                                "type": "QOpcUa::UaStatusCode"
+                            }
+                        ],
+                        "name": "_q_handleDirectoryNodeMethodCallFinished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "type": "QList<QOpcUaBrowsePathTarget>"
+                            },
+                            {
+                                "type": "QList<QOpcUaRelativePathElement>"
+                            },
+                            {
+                                "type": "QOpcUa::UaStatusCode"
+                            }
+                        ],
+                        "name": "_q_handleResolveBrowsePathFinished",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_q_certificateCheckTimeout",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "_q_updateTrustList",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qopcuagdsclient.h",
         "outputRevision": 68
     }
 ]

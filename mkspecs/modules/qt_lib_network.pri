@@ -11,8 +11,8 @@ QT.network.depends =  core
 QT.network.uses = 
 QT.network.module_config = v2 staticlib
 QT.network.DEFINES = QT_NETWORK_LIB
-QT.network.enabled_features = schannel ssl http udpsocket networkproxy socks5 networkinterface networkdiskcache localserver dnslookup sspi topleveldomain
-QT.network.disabled_features = getifaddrs ipv6ifname securetransport dtls ocsp sctp brotli gssapi
-QT_CONFIG += schannel ssl http udpsocket networkproxy socks5 networkinterface networkdiskcache localserver dnslookup sspi topleveldomain
+QT.network.enabled_features = schannel ssl dtls ocsp http udpsocket networkproxy socks5 networkinterface networkdiskcache localserver dnslookup sspi topleveldomain
+QT.network.disabled_features = getifaddrs ipv6ifname securetransport sctp brotli gssapi
+QT_CONFIG += schannel ssl dtls ocsp http udpsocket networkproxy socks5 networkinterface networkdiskcache localserver dnslookup sspi topleveldomain
 QT_MODULES += network
 

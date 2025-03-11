@@ -2,22 +2,6 @@
 if(NOT DEFINED QT_DEFAULT_IMPORT_CONFIGURATION)
     set(QT_DEFAULT_IMPORT_CONFIGURATION RELEASE)
 endif()
-
-# Import configure-time executable Qt6::syncqt
-if(NOT TARGET Qt6::syncqt)
-    set(_qt_imported_location "${PACKAGE_PREFIX_DIR}/bin/syncqt.exe")
-    if(NOT EXISTS "${_qt_imported_location}")
-        message(FATAL_ERROR "Unable to add configure time executable Qt6::syncqt"
-            " ${_qt_imported_location} doesn't exists")
-    endif()
-    add_executable(Qt6::syncqt IMPORTED)
-    set_property(TARGET Qt6::syncqt APPEND PROPERTY IMPORTED_CONFIGURATIONS )
-    set_target_properties(Qt6::syncqt PROPERTIES IMPORTED_LOCATION_RELEASE
-        "${_qt_imported_location}")
-    set_property(TARGET Qt6::syncqt PROPERTY IMPORTED_GLOBAL TRUE)
-    unset(_qt_imported_location)
-endif()
-
 get_target_property(_qt_imported_location Qt6::syncqt IMPORTED_LOCATION_RELEASE)
 get_target_property(_qt_imported_location_default Qt6::syncqt IMPORTED_LOCATION_${QT_DEFAULT_IMPORT_CONFIGURATION})
 
